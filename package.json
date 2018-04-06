@@ -31,8 +31,8 @@
 	},
 	"devDependencies": {
 		"ava": "*",
+		"file-type": "^7.6.0",
 		"gifsicle": "^3.0.4",
-		"is-gif": "^1.0.0",
 		"path-exists": "^3.0.0",
 		"xo": "*"
 	}

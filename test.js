@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import gifsicle from 'gifsicle';
-import isGif from 'is-gif';
+import fileType from 'file-type';
 import pathExists from 'path-exists';
 import pify from 'pify';
 import test from 'ava';
@@ -22,7 +22,7 @@ test('return a optimized buffer', async t => {
 	});
 
 	t.true(data.length < buf.length);
-	t.true(isGif(data));
+	t.is(fileType(data).ext, 'gif');
 });
 
 test('remove temporary files', async t => {
