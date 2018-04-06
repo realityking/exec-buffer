@@ -5,7 +5,7 @@ import isGif from 'is-gif';
 import pathExists from 'path-exists';
 import pify from 'pify';
 import test from 'ava';
-import m from './';
+import m from '.';
 
 test('set temporary directories', t => {
 	const {input, output} = m;
